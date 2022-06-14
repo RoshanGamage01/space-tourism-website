@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#FFF" />
+              <path
+                fill="#0B0D17"
+                d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+              />
+            </g>
+          </svg>
+        </a>
+
+        <div class="line mobile-hide tablet-hide"></div>
+
+        <svg
+          class="ham-icon desctop-hide tablet-hide"
+          id="ham-ico"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="21"
+        >
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+
+        <div class="nav-links desctop-hide tablet-hide" id="nav-links">
+          <svg
+            id="close"
+            class="close tablet-hide desctop-hide"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="21"
+          >
+            <g fill="#D0D6F9" fill-rule="evenodd">
+              <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+              <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+            </g>
+          </svg>
+
+          <ul>
+            <li><a href="index.html" class="active" >00 Home</a></li>
+            <li><a href="destination-moon.html" >01 Destination</a></li>
+            <li><a href="crew-commander.html" >02 Crew</a></li>
+            <li><a href="technology-vehicle.html" >03 Technology</a></li>
+          </ul>
+        </div>
+
+        <ul class="mobile-hide tablet-hide desctop-links">
+          <li><a href="index.html" class="active">00 Home</a></li>
+          <li><a href="destination-moon.html">01 Destination</a></li>
+          <li><a href="crew-commander.html">02 Crew</a></li>
+          <li><a href="technology-vehicle.html">03 Technology</a></li>
+        </ul>
+
+        <ul class="mobile-hide desctop-hide links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="destination-moon.html">Destination</a></li>
+          <li><a href="crew-commander.html">Crew</a></li>
+          <li><a href="technology-vehicle.html">Technology</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="body container">
+      <div>
+        <span class="subheading-2" style="color: #d0d6f9"
+          >So, you want to travel to</span
+        >
+
+        <h1>SPACE</h1>
+
+        <p style="color: #d0d6f9; font-weight: 100">
+          Let’s face it; if you want to go to space, you might as well genuinely
+          go to outer space and not hover kind of on the edge of it. Well sit
+          back, and relax because we’ll give you a truly out of this world
+          experience!
+        </p>
+      </div>
+
+      <a href="destination-moon.html" class="explore"> EXPLORE </a>
+    </section>
+
+    <script src="./scripts/navToggle.js"></script>
+  </body>
+</html>

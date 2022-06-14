@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0B0D17;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}  
+
+h1, h2, h3, h4, .subheading-1{
+    font-family: "Bellefair", serif;
+}
+
+h1{
+    font-size: 150px;
+    font-weight: lighter;
+}
+
+h2{
+    font-size: 100px;
+}
+
+h3{
+    font-size: 56px;
+}
+
+h4{
+    font-size: 32px;
+}
+
+h5, .subheading-2, nav{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h5{
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    color: #D0D6F9;
+}
+
+.subheading-1{
+    font-size: 28px;
+}
+
+.subheading-2{
+    font-size: 14px;
+    letter-spacing: 2.35px;
+}
+
+nav{
+    font-size: 16px;
+    letter-spacing: 2.7px;
+}
+
+/* Mobile max=767px */
+
+.mobile-hide{
+    display: none;
+}
+
+.container{
+    padding: 20px;
+    text-align: center;
+}
+
+#ham-ico{
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+    height: 50px;
+}
+
+.nav-links{
+    position: relative;
+    right: -20px;
+    top: -20px;
+    display: none;
+    text-align: left;
+    height: 100vh;
+    width: 254px;
+    backdrop-filter: blur(31.549999999999997px);
+    animation-name: navAn;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.39, -0.01, 0.13, 1.02);
+}
+
+@keyframes navAn {
+    from{
+        right: -254px;
+        opacity: 0%;
+    }
+    to{
+        right: -20px;
+        opacity: 100%;
+    }
+}
+
+.close{
+    float: right;
+    margin: 20px 20px 0 0;
+}
+
+.nav-links ul{
+    list-style-type: none;
+    margin-top: 118px;
+}
+
+.nav-links li a{
+    display: block;
+    margin-bottom: 26px;
+    text-decoration: none;
+    color: white;
+    padding: 6px 20px;
+}
+
+.active{
+    border-right: 4px solid white;
+}
+
+/* ----- */
+
+
+
+/* Tablet  768px  */
+
+@media only screen and (min-width: 768px) {
+
+    h1{
+        font-size: 150px;
+    }
+
+    .ham-icon{
+        display: none;
+    }
+
+    .links{
+        display: flex;
+    }
+
+    nav ul{
+        position: relative;
+        top: -20px;
+        right: -20px;
+        display: flex;
+        list-style-type: none;
+        background-color: rgba(255, 255, 255, 0.04);
+        padding: 40px 40px 44px 40px;
+    }
+
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        padding-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    nav ul li a:hover{
+        border-bottom: 3px solid #979797;
+    }
+
+    .active{
+        border-right: none;
+        border-bottom: 4px solid white;
+    }
+
+
+    .tablet-hide{
+        display: none;
+    }
+}
+
+/* Desktop 1440px */
+
+@media only screen and (min-width: 1440px){
+
+    .desctop-hide{
+        display: none;
+    }
+    
+    .ham-icon{
+        display: none;
+    }
+    
+    body{
+        background-image: url(../assets/destination/background-destination-desktop.jpg);
+    }
+
+    nav{
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        padding-left: 20px;
+    }
+
+    nav .desctop-links{
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(50px);
+        position: relative;
+        z-index: 3;
+        right: -20px;
+        width: 50%;
+        height: fit-content;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+    nav .desctop-links li a{
+        padding-bottom: 40px;
+        transition: 0.2s ease-in-out;
+    }
+
+    nav .desctop-links li a:hover{
+        border-bottom: 3px solid #979797;
+    }
+}

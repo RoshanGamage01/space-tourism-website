@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/moon_destination.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav>
+        <a href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+            <g fill="none" fill-rule="evenodd">
+              <circle cx="24" cy="24" r="24" fill="#FFF" />
+              <path
+                fill="#0B0D17"
+                d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+              />
+            </g>
+          </svg>
+        </a>
+
+        <div class="line mobile-hide tablet-hide"></div>
+
+        <svg
+          class="ham-icon desctop-hide tablet-hide"
+          id="ham-ico"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="21"
+        >
+          <g fill="#D0D6F9" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+          </g>
+        </svg>
+
+        <div class="nav-links desctop-hide tablet-hide" id="nav-links">
+          <svg
+            id="close"
+            class="close tablet-hide desctop-hide"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="21"
+          >
+            <g fill="#D0D6F9" fill-rule="evenodd">
+              <path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z" />
+              <path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z" />
+            </g>
+          </svg>
+
+          <ul>
+            <li><a href="index.html">00 Home</a></li>
+            <li>
+              <a href="destination-moon.html" class="active">01 Destination</a>
+            </li>
+            <li><a href="crew-commander.html">02 Crew</a></li>
+            <li><a href="technology-vehicle.html">03 Technology</a></li>
+          </ul>
+        </div>
+
+        <ul class="mobile-hide tablet-hide desctop-links">
+          <li><a href="index.html">00 Home</a></li>
+          <li>
+            <a href="destination-moon.html" class="active">01 Destination</a>
+          </li>
+          <li><a href="crew-commander.html">02 Crew</a></li>
+          <li><a href="technology-vehicle.html">03 Technology</a></li>
+        </ul>
+
+        <ul class="mobile-hide desctop-hide links">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="destination-moon.html" class="active">Destination</a>
+          </li>
+          <li><a href="crew-commander.html">Crew</a></li>
+          <li><a href="technology-vehicle.html">Technology</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="image-and-title">
+        <span class="subheading-2"><b>01</b> Pick your destination</span>
+        <img id="planet-image" src="./assets/destination/image-moon.png" alt="MOON" width="170" />
+      </div>
+      <div class="nav-and-description">
+        <ul>
+          <li><a href="#" class="des-active" id="moon">MOON</a></li>
+          <li><a href="#" id="mars">MARS</a></li>
+          <li><a href="#" id="europa">EUROPA</a></li>
+          <li><a href="#" id="titan">TITAN</a></li>
+        </ul>
+        <h3 id="name">MOON</h3>
+        <p style="color: #d0d6f9; font-weight: 100" id="desc">
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+        <hr />
+        <div class="info">
+          <div class="avg">
+            <span class="subheading-2" style="color: #d0d6f9"
+              >Avg. distance</span
+            >
+            <span class="subheading-1" id="avg-distance">384,400 km</span>
+          </div>
+          <div class="travel-time">
+            <span  class="subheading-2" style="color: #d0d6f9"
+              >Est. travel time</span
+            >
+            <span class="subheading-1" id="trvl-time"> 3 days</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/navToggle.js"></script>
+    <script src="./scripts/destination.js"></script>
+  </body>
+</html>
