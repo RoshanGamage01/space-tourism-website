@@ -4,7 +4,6 @@ body{
     background-image: url(../assets/home/background-home-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 
 h1{
