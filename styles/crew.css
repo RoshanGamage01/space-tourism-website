@@ -1,0 +1,181 @@
+/* Mobile max=767px */
+
+body{
+    background-image: url(../assets/crew/background-crew-mobile.jpg);
+}
+
+h1{
+    font-size: 80px;
+    margin: 20px 0;
+}
+
+section{
+    margin: 0 20px;
+    text-align: center;
+}
+
+.desktop-section{
+    display: none;
+}
+
+.tablet-section{
+    display: none;
+}
+
+.subheading-2{
+    display: block;
+    text-transform: uppercase;
+}
+
+.subheading-2 b{
+    color: #979797;
+    margin-right: 10px;
+}
+
+.mobile-section img{
+    width: 150px;
+    margin-top: 30px;
+}
+
+hr{
+    opacity: 30%;
+}
+
+.sliders{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 110px;
+}
+
+.sliders .slider{
+    width: 10px;
+    height: 10px;
+    background-color: #979797;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sliders .slider:hover{
+    background-color: #cbc9c9;
+}
+
+.sliders .slider-active{
+    background-color: white;
+}
+
+h4{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    color: #979797;
+}
+
+.subheading-1{
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 30px;
+}
+
+p{
+    font-weight: lighter;
+    color: #D0D6F9;
+}
+/* Tablet  768px  */
+
+@media only screen and (min-width: 768px) {
+    body{
+        background-image: url(../assets/crew/background-crew-tablet.jpg);
+    }
+
+    .mobile-section{
+        display: none;
+    }
+
+    .desktop-section{
+        display: none;
+    }
+
+    .tablet-section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tablet-section .subheading-2{
+        text-align: left;
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .tablet-section p{
+        width: 500px;
+    }
+
+    .tablet-section .detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tablet-section img{
+        width: 350px;
+        text-align: center;
+    }
+
+    .tablet-section .detail .sliders .slider{
+        margin: 30px 20px;
+    }
+}
+
+/* Desktop 1440px */
+
+@media only screen and (min-width: 1440px){
+    body{
+        background-image: url(../assets/crew/background-crew-desktop.jpg);
+    }
+
+    section{
+        text-align: left;
+    }
+
+    .desktop-section{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+
+    .mobile-section{
+        display: none;
+    }
+
+    .tablet-section{
+        display: none;
+    }
+
+    .desktop-section .details{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .desktop-section .details .subheading-2{
+        font-size: 24px;
+    }
+
+    .desktop-section .details h4{
+        font-size: 37px;
+    }
+
+    .desktop-section .details .subheading-1{
+        font-size: 65px;
+    }
+
+    .desktop-section .details p{
+        width: 400px;
+    }
+
+   
+}
