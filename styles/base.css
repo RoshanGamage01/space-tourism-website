@@ -94,6 +94,7 @@ header nav{
     height: 100vh;
     width: 254px;
     backdrop-filter: blur(31.549999999999997px);
+    -webkit-backdrop-filter: blur(31.549999999999997px);
     animation-name: navAn;
     animation-duration: 0.3s;
     animation-timing-function: cubic-bezier(0.39, -0.01, 0.13, 1.02);
