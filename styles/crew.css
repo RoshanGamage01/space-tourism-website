@@ -32,9 +32,27 @@ section{
     margin-right: 10px;
 }
 
+section img{
+    animation-name: imgAn;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    transition-delay: 0.3s;
+    transition-timing-function: ease;
+}
+
 .mobile-section img{
     width: 150px;
     margin-top: 30px;
+}
+
+@keyframes imgAn {
+    from{
+        position: relative;
+        right: -400px;
+    }to{
+        position: relative;
+        right: 0px;
+    }
 }
 
 hr{
@@ -106,6 +124,10 @@ p{
         text-align: left;
         font-size: 24px;
         margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .tablet-section h4{
         margin-bottom: 30px;
     }
 
