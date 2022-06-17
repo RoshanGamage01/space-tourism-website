@@ -79,8 +79,8 @@ SLIDERS.forEach((e) => {
       ACTIVE.forEach((el) => {
         el.className = "slider";
       });
-
       e.className = "slider slider-active";
+      
       for (let i = 0; i < SLIDERS.length; i++) {
         if (e.id == SLIDERS[i].id) {
           ROLE[0].innerHTML = DATA[i].role;

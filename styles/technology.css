@@ -181,12 +181,16 @@ p {
 
   section .body .details .desc{
       text-align: left;
-      width: 400px;
+      width: 600px;
   }
 
   section .body .details .desc .subheading-2{
       text-align: left;
       margin: 0;
+  }
+
+  section .body .details .desc h4{
+      font-size: 56px;
   }
 
   section .details .slider .slide{
@@ -195,5 +199,6 @@ p {
 
   p{
       padding: 0;
+      width: 500px;
   }
 }
