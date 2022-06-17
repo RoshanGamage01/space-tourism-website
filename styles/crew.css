@@ -36,8 +36,7 @@ section img{
     animation-name: imgAn;
     animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
-    transition-delay: 0.3s;
-    transition-timing-function: ease;
+    transition: 0.3s ease;
 }
 
 .mobile-section img{
@@ -86,6 +85,7 @@ h4{
     font-weight: 400;
     font-size: 18px;
     color: #979797;
+    transition: 0.3s ease;
 }
 
 .subheading-1{
@@ -129,6 +129,7 @@ p{
 
     .tablet-section h4{
         margin-bottom: 30px;
+        transition: 0.3s ease;
     }
 
     .tablet-section p{
@@ -189,6 +190,7 @@ p{
 
     .desktop-section .details h4{
         font-size: 37px;
+        transition: 0.3s ease;
     }
 
     .desktop-section .details .subheading-1{
